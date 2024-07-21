@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Blog preview card</title>
+
+  <style>
+    body{
+      background-color: hsl(47, 88%, 63%);
+      margin: 0;
+      padding: 0;
+      display: flex;
+       justify-content: center;
+       align-items: center;
+      min-height: 100vh;
+      font-family: "Figtree", sans-serif;
+      
+    }
+    .container{
+     display: flex;
+     flex-direction: column;
+     margin: 20px;
+      width: 100%;
+      max-width: 400px;
+     
+    }
+    .subcontainer{
+      display: flex;
+      flex-direction: column;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      box-shadow: 10px 10px;
+      border: 1px solid black;
+      overflow: hidden;
+
+    }
+
+    .illustrate{
+      
+      width: auto;
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .illustrate img{
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .text{
+     padding: 20px;
+    }
+    .type{
+      background-color: hsl(47, 88%, 63%);
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .text h1 {
+      margin: 10px 0;
+      font-size: 24px;
+    
+    }
+
+    .text h1:hover{
+      color: hsl(47, 88%, 63%);
+    }
+
+    
+    .text p {
+      font-size: 16px;
+      color: hsl(0, 0%, 30%);
+      margin: 10px 0;
+    }
+    .dp{
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .dp img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      
+    }
+    .dp p {
+      margin: 0 0 0 10px;
+      font-size: 16px;
+      color: black;
+      font-weight: 800;
+    }
+    .attribution { font-size: 11px; text-align: center;margin-top: 20px;
+    margin-left: -10px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+   
+
+    @media (max-width: 600px) {
+      .text h1 {
+        font-size: 20px;
+      }
+
+      .container{
+        width: 80%;
+      }
+
+      .text p {
+        font-size: 14px;
+      }
+
+      .dp img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .dp p {
+        font-size: 14px;
+       color: black;
+       font-weight: 800;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="subcontainer">
+    <div class="illustrate"><img  src="./assets/images/illustration-article.svg"></div>
+    
+<div class="text">
+  <h3 class="type">Learning </h3>
+  <p style="font-weight: 500; color: black;"> Published 21 Dec 2023</p>
+ 
+
+  <h1>HTML & CSS foundations</h1>
+
+  <p>These languages are the backbone of every website, defining structure, content, and presentation.
+</p>
+<div class="dp">
+  <img class="dp-img" src="./assets/images/image-avatar.webp">
+  <p class="dp-p">Greg Hooper</p>
+</div>
+
+  </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/PL-SaiPrakash">Lakshmi Sai Prakash</a>.
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
